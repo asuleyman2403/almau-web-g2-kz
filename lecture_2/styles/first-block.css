@@ -1,0 +1,105 @@
+.first-block {
+    height: 100vh;
+    background: #232525;
+    width: 100%;
+    padding: 0 5%;
+    overflow: auto;
+}
+
+.first-block nav {
+    margin-top: 20px;
+    position: relative;
+    height: 40px;
+}
+
+.logo-wrapper {
+    overflow: auto;
+    /* display: inline-block;
+    margin-right: 30%; */
+    position: absolute;
+    left: 0;
+    top: calc(50% - 18px);
+}
+
+.logo {
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    /* color: #FFFFFF; */
+    /* color: rgb(0, 0, 0); */
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.menu {
+    /* display: inline-block; */
+    position: absolute;
+    right: 0;
+    top: calc(50% - 12px);
+}
+
+.menu-item {
+    color: rgba(255, 255, 255, 0.3);
+    padding: 20px 12px;
+}
+
+.menu-item:hover {
+    color: #a2dc4d;
+}
+
+.menu-item-button {
+    background: #a2dc4d;
+    padding: 10px 15px;
+    border-radius: 100px;
+    margin: 0 5px;
+}
+
+.menu-item-button:hover {
+    box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
+}
+
+.main {
+    margin: 150px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.main p {
+    color: rgb(128, 128, 128);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    margin-top: 30px;
+}
+
+.button-wrapper button {
+    background: transparent;
+    border: 1px solid #a2dc4d;
+    padding: 12px 20px;
+    color: #a2dc4d;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button-wrapper button:hover {
+    background: #a2dc4d;
+    color: white;
+}
+
+.main-img {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    /* object-fit: contain; */
+    object-fit: cover;
+}
