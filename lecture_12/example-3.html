@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+      .input--error {
+        border: 1px solid red;
+      }
+
+      .error-text {
+        color: red;
+      }
+
+      .box {
+        background: blue;
+        width: 400px;
+        height: 400px;
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="field">
+      <label for="input">Username jazynyz</label>
+      <input id="input" type="text" onchange="onInputChange(event)" />
+    </div>
+    <div id="box" class="box" onmouseenter="onMouseEnter(event)" onmouseleave="onMouseLeave(event)">
+
+    </div>
+    <script>
+      //   const input = document.getElementById('input');
+
+      function onInputChange(event) {
+        console.log(event);
+        const value = event.target.value;
+        const input = event.target;
+        const div = document.getElementById('field');
+        const p = document.createElement('P');
+        if (value.length < 8) {
+          input.className = 'input--error';
+          p.innerHTML = 'Username 8 aripten jogary boly kerek';
+          p.className = 'error-text';
+          div.appendChild(p);
+        } else {
+          input.className = '';
+          const ps = div.getElementsByTagName('P');
+          for (let p of ps) {
+            p.remove();
+          }            
+        }
+      }
+
+      //   input.addEventListener('change', onInputChange);
+
+      function onMouseEnter (event) {
+        const element = event.target;
+        console.log('BOXtyn ishine tintyir kirdi');
+      }
+
+      function onMouseLeave (event) {
+        const element = event.target;
+        const input = document.getElementById('input');
+        input.value = '';
+        console.log('BOXtan shykty');
+      }
+    </script>
+  </body>
+</html>

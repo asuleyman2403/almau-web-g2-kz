@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <ul id="tapsyrmalar">
+            <li class="tapsyrma">SOJ 4 orynday</li>
+            <li class="tapsyrma">SOJ 5 orynday</li>
+        </ul>
+        <ul>
+            <li>Burger</li>
+            <li>Doner</li>
+        </ul>
+        <script>
+            const ul = document.getElementsByTagName('UL');
+            // console.log(ul);
+
+            const listElements = document.getElementsByTagName('LI');
+            // console.log(listElemetns);
+
+            const tapsymalarElement = document.getElementById('tapsyrmalar');
+            const tapsymarlarList = tapsymalarElement.getElementsByTagName('LI');
+            // console.log(tapsymarlarList);
+
+            const tapsymalar = document.getElementsByClassName('tapsyrma');
+            console.log(tapsymalar);
+            for (let i = 0; i < tapsymalar.length; i++) {
+                tapsymalar[i].style = 'color: red';
+            }
+        </script>
+    </body>
+</html>

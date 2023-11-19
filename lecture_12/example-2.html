@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Lecture 12</title>
+    <style>
+      .student {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .student__prop {
+        padding: 5px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="onButtonClick(event)">Magan bas!</button>
+      <button id="eki">Ekinshi batyrma!</button>
+
+      <div id="studentter" class="studentter"></div>
+    </div>
+    <script>
+      let students = [
+        {
+          name: 'Korkem',
+          grade: 80,
+        },
+        {
+          name: 'Alikhan',
+          grade: 85,
+        },
+        {
+          name: 'Aruzhan',
+          grade: 95,
+        },
+        {
+          name: 'Nurakhmet',
+          grade: 90,
+        },
+      ];
+
+      
+      const studentsWrapper = document.getElementById('studentter');
+
+      function showStudents() {
+        let studentsElements = [];
+        for (let i = 0; i < students.length; i++) {
+          studentsElements.push(`
+            <div class="student">
+                <div class="student__prop">${students[i].name}</div>
+                <div class="student__prop">${students[i].grade}</div>
+                <div class="student__prop action" onclick="removeStudent(${i})">
+                    <button>Өшіру</button>
+                </div>
+            </div>
+        `);
+        }
+        studentsWrapper.innerHTML = studentsElements.join('');
+      }
+
+      function removeStudent(index) {
+        console.log(index);
+        let newStudents = [];
+
+        for (let i = 0; i < students.length; i++) {
+          if (i !== index) {
+            newStudents.push(students[i]);
+          }
+        }
+
+        studentsElements = [];
+        students = newStudents;
+
+        showStudents();
+      }
+
+      showStudents();
+    </script>
+    <script>
+      function onButtonClick(event) {
+        console.log(event);
+        console.log('Meni basty!');
+      }
+
+      // event, user events: mouse events, keyboard events
+      const button = document.getElementById('eki');
+      console.log(button);
+      button.addEventListener('click', onButtonClick);
+    </script>
+  </body>
+</html>

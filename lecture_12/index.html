@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <style>
+      .student {
+        width: 200px;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px dashed black;
+        margin: 5px;
+      }
+
+      .student:hover {
+        background: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM - Document object manipulation</h1>
+    <ul id="studentter-tizimi"></ul>
+    <div id="counter">0</div>
+    <script>
+      // document.write('Hello, world');
+      // document.body.innerHTML = '<h2>Ozgertilgen</h2>';
+      const students = [
+        {
+          name: 'Korkem',
+          grade: 80,
+        },
+        {
+          name: 'Alikhan',
+          grade: 85,
+        },
+        {
+          name: 'Aruzhan',
+          grade: 95,
+        },
+        {
+          name: 'Nurakhmet',
+          grade: 90,
+        },
+      ];
+
+      const listElement = document.getElementById('studentter-tizimi');
+      console.log(listElement);
+      let content = '';
+
+      for (let i = 0; i < students.length; i++) {
+        content += `<li class="student"><span class="student-name" style="color: red;">${students[i].name}</span> - ${students[i].grade}</li>`;
+      }
+
+      listElement.innerHTML = content;
+
+    //   const timeout = setTimeout(function() {
+    //     listElement.innerHTML = content;
+    //     clearTimeout(timeout);
+    //   }, 3000);
+
+      const counterDiv = document.getElementById('counter');
+
+      let counter = 0;
+      const interval = setInterval(function () {
+        counter++;
+        counterDiv.innerHTML = counter;
+
+        if (counter >= 5) {
+          clearInterval(interval);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
