@@ -1,0 +1,15 @@
+@import url('./vendor/reset.css');
+@import url('./vendor/slick.css');
+@import url('./vendor/icomoon.css');
+@import url('./custom/slider.css');
+@import url('./custom/header.css');
+@import url('./custom/first-block.css');
+@import url('./custom/work.css');
+@import url('./custom/accomplishments.css');
+@import url('./custom/reviews.css');
+@import url('./custom/footer.css');
+@import url('./custom/contact-modal.css');
+
+body{
+  font-family: "Poppins", Arial, sans-serif;
+}

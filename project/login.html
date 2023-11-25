@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Войти</title>
+    <link href="./style/login.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header-top">
+        <a class="logo" href="#">E-Shop</a>
+        <nav class="nav" id="nav">
+          <a class="nav__link nav__link_active" href="#">Главная</a>
+          <a class="nav__link" href="#">Товары</a>
+        </nav>
+        <div class="header__burger-menu-wrapper" onclick="onMenuClick()">
+          <div class="header__burger-menu"></div>
+        </div>
+      </div>
+      <div class="header__mobile-menu">
+        <a href="" class="header__mobile-menu__item">Главная</a>
+        <a href="" class="header__mobile-menu__item">Товары</a>
+        <a href="" class="header__mobile-menu__item">Регистрация</a>
+        <a href="" class="header__mobile-menu__item">Войти</a>
+      </div>
+    </header>
+    <section class="login-form-wrapper">
+        <form action="" class="login-form" id="login-form">
+            <div class="login-form__content">
+                <h1>Войти</h1>
+                <input type="text" name="username" />
+                <input type="password" name="password" />
+                <button type="button" onclick="onLogin()">Войти</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-main-inform">
+          <h3 class="footer-main-inform__title">О нас</h3>
+          <p class="footer-main-inform__description">
+            Мы e-shop - очередной интернет магазин. Доставим любой выбранный товар из католога день в день. Учтем любые
+            ваши пожелания
+          </p>
+          <div class="footer-main-social">
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-twitter"></i></a>
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-facebook"></i></a>
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-linkedin"></i></a>
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-dribbble"></i></a>
+          </div>
+        </div>
+        <div class="footer-main-inform">
+          <h3 class="footer-main-inform__title">Мы гарантируем</h3>
+          <ul class="footer-main__information">
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Скорость доставки</span>
+            </li>
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Гарантия на год</span>
+            </li>
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Защиту прав потрибеля</span>
+            </li>
+            <li class="footer-main__inform__link">
+              <i class="icon-check footer-main__second-icon"></i>
+              <span class="footer-main__second-desc">Еще что-то</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-main-inform">
+          <h3 class="footer-main-inform__title">Контакты</h3>
+          <p class="footer-main-inform__address">Розыбакиева 227</p>
+          <ul class="footer-inform__contacts">
+            <li class="footer-inform__contact">
+              <i class="footer-inform__third-icon icon-phone"></i>
+              <span class="footer-inform__third-desc">+7 777 777 77 77</span>
+            </li>
+            <li class="footer-inform__contact">
+              <i class="footer-inform__third-icon icon-envelope"></i>
+              <span class="footer-inform__third-desc">info@e-shop.com</span>
+            </li>
+            <li class="footer-inform__contact">
+              <i class="footer-inform__third-icon icon-location4"></i>
+              <span class="footer-inform__third-desc">e-shop.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h3 class="footer-bottom__copyright">
+          Copyright ©2019 Все права защищены | Этот сайт сделан с <i class="icon-heart3"></i>
+          <span class="gray">для студентов</span>
+        </h3>
+      </div>
+    </footer>
+    <script src="./script/header.js"></script>
+    <script src="./script/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.contact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.contact-modal.contact-modal--opened {
+    display: flex;
+}
+
+.contact-modal__content {
+    background: white;
+    width: 60%;
+    height: 60%;
+    border: 5px solid #232525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-form input {
+    display: block;
+    height: 24px;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid #232525;
+}
+
+.contact-modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #232525;
+    height: 4px;
+    width: 24px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.contact-modal__close::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #232525;
+    height: 4px;
+    width: 24px;
+    transform: rotate(90deg);
+}
+
+
