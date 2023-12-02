@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Войти</title>
-    <link href="./style/login.css" rel="stylesheet" />
+    <link href="./style/products.css" rel="stylesheet" />
   </head>
   <body>
     <header id="header" class="header">
@@ -19,22 +19,8 @@
         <a href="" class="header__mobile-menu__item">Войти</a>
       </div>
     </header>
-    <section class="form-wrapper">
-        <form action="" class="form" id="login-form">
-            <div class="form__content">
-                <h1 class="form__title">Войти</h1>
-                <div class="input-wrapper">
-                  <label for="username">Логин:</label>
-                  <input type="text" id="username" name="username" />
-                </div>
-                <div class="input-wrapper">
-                  <label for="password">Пароль:</label>
-                  <input type="password" id="password" name="password" />
-                </div>
-                <p class="validation-text text--error" id="error-text"></p>
-                <button class="button" type="button" onclick="onLogin()">Войти</button>
-            </div>
-        </form>
+    <section class="products" id="basket">
+
     </section>
     <footer class="footer">
       <div class="footer-main">
@@ -100,5 +86,7 @@
     </footer>
     <script src="./script/users.js"></script>
     <script src="./script/header.js"></script>
+    <script src="./script/product-items.js"></script>
+    <script src="./script/basket.js"></script>
   </body>
 </html>

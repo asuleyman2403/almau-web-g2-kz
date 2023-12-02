@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Landing Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Poppins:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="./style/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>E-Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header id="header" class="header">
       <div class="header-top">
-        <a class = "logo" href="#">E-Shop</a>
-        <nav class = "nav" id="nav">
-          <a class = "nav__link nav__link_active" href="#">Главная</a>
-          <a class = "nav__link" href="#">Товары</a>
-          <!-- <a class = "nav__link nav__link_active" href="#">Моя корзина</a>
-          <a class = "nav__link" href="#">Выйти</a> -->
-          <a class = "nav__link nav__link_bordered" href="/sign-up.html" id = "signUp">Регистрация</a>
-          <a class = "nav__link nav__link_bordered" href="/login.html">Войти</a>
-        </nav>
+        <a class="logo" href="/">E-Shop</a>
+        <nav class="nav" id="nav"></nav>
         <div class="header__burger-menu-wrapper" onclick="onMenuClick()">
-          <div class="header__burger-menu" ></div>
+          <div class="header__burger-menu"></div>
         </div>
       </div>
-      <div class="header__mobile-menu">
+      <div class="header__mobile-menu" id="mobile-menu">
         <a href="" class="header__mobile-menu__item">Главная</a>
         <a href="" class="header__mobile-menu__item">Товары</a>
         <a href="" class="header__mobile-menu__item">Регистрация</a>
@@ -33,69 +31,79 @@
     <div class="first-block">
       <div class="header-bottom">
         <div class="intro">
-          <h1 class = "intro_main-text">E-Shop</h1>
-          <p class = "intro_para">Магазин качественной техники, выбирайте нас. Сулпак уже не номер один в Казахстане!</p>
+          <h1 class="intro_main-text">E-Shop</h1>
+          <p class="intro_para">Магазин качественной техники, выбирайте нас. Сулпак уже не номер один в Казахстане!</p>
           <div class="button-group">
-            <button class = "button-group_button" type="button" name="button">Наши товары</button>
-            <button class = "button-group_button" type="button" name="button" onclick="openModal()">Связаться с нами</button>
+            <button class="button-group_button" onclick="window.location.href = 'http://localhost:5500/products.html'">Наши товары</button>
+            <button class="button-group_button" type="button" name="button" onclick="openModal()">
+              Связаться с нами
+            </button>
           </div>
         </div>
         <div class="header-bottom_slider slider">
-            <div class="slider__item">
-              <img class = "header-bottom_img slider__image" src="images/img_bg_1.webp" alt="Background Image">
-            </div>
-            <div class="slider__item">
-              <img class = "header-bottom_img  slider__image" src="images/img_bg_2.jpg" alt="Background Image">
-            </div>
-            <div class="slider__item">
-              <img class = "header-bottom_img  slider__image" src="images/img_bg_3.jpg" alt="Background Image">
-            </div>
-            <div class="slider__item">
-              <img class = "header-bottom_img  slider__image" src="images/img_bg_4.jpg" alt="Background Image">
-            </div>
+          <div class="slider__item">
+            <img class="header-bottom_img slider__image" src="images/img_bg_1.webp" alt="Background Image" />
+          </div>
+          <div class="slider__item">
+            <img class="header-bottom_img slider__image" src="images/img_bg_2.jpg" alt="Background Image" />
+          </div>
+          <div class="slider__item">
+            <img class="header-bottom_img slider__image" src="images/img_bg_3.jpg" alt="Background Image" />
+          </div>
+          <div class="slider__item">
+            <img class="header-bottom_img slider__image" src="images/img_bg_4.jpg" alt="Background Image" />
+          </div>
         </div>
       </div>
     </div>
     <section class="work">
-      <div class = "work-header">
-        <h1 class = "work-header__main-title">Как мы работаем</h1>
+      <div class="work-header">
+        <h1 class="work-header__main-title">Как мы работаем</h1>
       </div>
-      <div class = "work-details">
-          <div class = "work-detail">
-            <i class = "icon-lightbulb ico"></i>
-            <h2 class = "work-detail__title">Всегда онлайн!</h2>
-            <p class = "work__paragraph">Возникли проблемы? Наши менеджеры ответят вам в любое время суток. Просто заполните форму, и мы свяжемя с вами через минуту!</p>
-          </div>
-          <div class = "work-detail">
-            <i class = "icon-tools ico"></i>
-            <h2 class = "work-detail__title">Гарантия качества</h2>
-            <p class = "work__paragraph">Мы даем гарантию на любой товар. Все ваши права защищены, можете вернуть деньги в течение 14 дней момента покупки.</p>
-          </div>
-          <div class = "work-detail">
-            <i class = "icon-map ico"></i>
-            <h2 class = "work-detail__title">100+ магазинов</h2>
-            <p class = "work__paragraph">Наши магазины доступных во всех крупных городах и регионах Казахстана. Если нас нет в вашем городе, доставим товар в недели до двери вашего дома!</p>
-          </div>
+      <div class="work-details">
+        <div class="work-detail">
+          <i class="icon-lightbulb ico"></i>
+          <h2 class="work-detail__title">Всегда онлайн!</h2>
+          <p class="work__paragraph">
+            Возникли проблемы? Наши менеджеры ответят вам в любое время суток. Просто заполните форму, и мы свяжемя с
+            вами через минуту!
+          </p>
+        </div>
+        <div class="work-detail">
+          <i class="icon-tools ico"></i>
+          <h2 class="work-detail__title">Гарантия качества</h2>
+          <p class="work__paragraph">
+            Мы даем гарантию на любой товар. Все ваши права защищены, можете вернуть деньги в течение 14 дней момента
+            покупки.
+          </p>
+        </div>
+        <div class="work-detail">
+          <i class="icon-map ico"></i>
+          <h2 class="work-detail__title">100+ магазинов</h2>
+          <p class="work__paragraph">
+            Наши магазины доступных во всех крупных городах и регионах Казахстана. Если нас нет в вашем городе, доставим
+            товар в недели до двери вашего дома!
+          </p>
+        </div>
       </div>
     </section>
     <section class="accomplishments">
-        <h1 class="main_text">Мы цифрами</h1>
-          <div class="acc-item">
-              <i class="acc-icon icon-paperplane"></i>
-              <h2 class="acc-count">0</h2>
-              <h3 class="description">Товаров</h3>
-          </div>
-          <div class="acc-item">
-            <i class="acc-icon icon-cup"></i>
-            <h2 class="acc-count">0</h2>
-            <h3 class="description">Положительных отзывов</h3>
-          </div>
-          <div class="acc-item">
-            <i class="acc-icon icon-user2"></i>
-            <h2 class="acc-count">0</h2>
-            <h3 class="description">Довольных клиентов</h3>
-          </div>
-        </div>
+      <h1 class="main_text">Мы цифрами</h1>
+      <div class="acc-item">
+        <i class="acc-icon icon-paperplane"></i>
+        <h2 class="acc-count">0</h2>
+        <h3 class="description">Товаров</h3>
+      </div>
+      <div class="acc-item">
+        <i class="acc-icon icon-cup"></i>
+        <h2 class="acc-count">0</h2>
+        <h3 class="description">Положительных отзывов</h3>
+      </div>
+      <div class="acc-item">
+        <i class="acc-icon icon-user2"></i>
+        <h2 class="acc-count">0</h2>
+        <h3 class="description">Довольных клиентов</h3>
+      </div>
     </section>
     <section class="reviews-blog">
       <div class="reviews-title">Недавние отзывы</div>
@@ -126,15 +134,18 @@
     <footer class="footer">
       <div class="footer-main">
         <div class="footer-main-inform">
-            <h3 class="footer-main-inform__title">О нас</h3>
-            <p class="footer-main-inform__description">Мы e-shop - очередной интернет магазин. Доставим любой выбранный товар из католога день в день. Учтем любые ваши пожелания</p>
-            <div class="footer-main-social">
-              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-twitter"></i></a>
-              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-facebook"></i></a>
-              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-linkedin"></i></a>
-              <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-dribbble"></i></a>
-            </div>
+          <h3 class="footer-main-inform__title">О нас</h3>
+          <p class="footer-main-inform__description">
+            Мы e-shop - очередной интернет магазин. Доставим любой выбранный товар из католога день в день. Учтем любые
+            ваши пожелания
+          </p>
+          <div class="footer-main-social">
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-twitter"></i></a>
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-facebook"></i></a>
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-linkedin"></i></a>
+            <a href="#" class="footer-main-social__link"><i class="footer-main-first-icon icon-dribbble"></i></a>
           </div>
+        </div>
         <div class="footer-main-inform">
           <h3 class="footer-main-inform__title">Мы гарантируем</h3>
           <ul class="footer-main__information">
@@ -158,9 +169,7 @@
         </div>
         <div class="footer-main-inform">
           <h3 class="footer-main-inform__title">Контакты</h3>
-          <p class="footer-main-inform__address">
-            Розыбакиева 227
-          </p>
+          <p class="footer-main-inform__address">Розыбакиева 227</p>
           <ul class="footer-inform__contacts">
             <li class="footer-inform__contact">
               <i class="footer-inform__third-icon icon-phone"></i>
@@ -178,7 +187,10 @@
         </div>
       </div>
       <div class="footer-bottom">
-          <h3 class="footer-bottom__copyright">Copyright ©2019 Все права защищены | Этот сайт сделан с <i class = "icon-heart3"></i> <span class="gray">для студентов</span> </h3>
+        <h3 class="footer-bottom__copyright">
+          Copyright ©2019 Все права защищены | Этот сайт сделан с <i class="icon-heart3"></i>
+          <span class="gray">для студентов</span>
+        </h3>
       </div>
     </footer>
     <div class="contact-modal" id="contact-modal">
@@ -186,17 +198,17 @@
         <div class="contact-modal__close" onclick="closeModal()"></div>
         <form action="" class="contact-form">
           <h2>Оставьте свои данные</h2>
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
         </form>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="./script/slick.min.js"></script>
-    <script src = "script/carousel.js"></script>
-    <script src = "./script/acc.js"></script>
+    <script src="script/carousel.js"></script>
+    <script src="./script/acc.js"></script>
     <script src="./script/header.js"></script>
     <script src="./script/modal.js"></script>
   </body>
